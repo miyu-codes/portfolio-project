@@ -1,6 +1,6 @@
 :root {
-  --branding-color: lightcyan;
-  --sub-color: lightblue;
+  --branding-color: lightblue;
+  --sub-color: lightcyan;
   --heading-font: "Playfair Display", serif;
   --body-font: "Poppins", sans-serif;
 }
@@ -15,10 +15,17 @@ h4 {
 
 h1 {
   font-size: 96px;
+  line-height: 1.5;
+}
+
+h2 {
+  font-size: 64px;
 }
 
 p {
   font-family: var(--body-font);
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .hero {
@@ -43,4 +50,36 @@ p {
   background-color: var(--branding-color);
   border-radius: 4px;
   padding: 15px 30px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 2px solid var(--branding-color);
+  border-radius: 4px;
+  padding: 15px 30px;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.projects {
+  padding: 120px 60px;
+}
+
+@media (max-width: 960px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 42px;
+  }
+  .hero {
+    padding: 80px 20px;
+  }
+  .projects {
+    padding: 0;
+    text-align: center;
+  }
 }
