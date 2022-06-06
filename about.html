@@ -2,8 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Portfolio</title>
+    <meta
+      name="description"
+      content="Miyu is a front-end developer based in Japan."
+    />
+    <title>About Miyu</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -23,6 +26,22 @@
     <link rel="stylesheet" href="styles/portfolio.css" />
   </head>
   <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <img src="images/logo.png" alt="logo" class="logo d-none d-md-block" />
+        <img
+          src="images/logo-small.jpg"
+          alt="logo"
+          class="logo d-block d-md-none"
+        />
+        <ul class="text-muted">
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li class="active"><a href="/about.html" title="About">Bio</a></li>
+          <li><a href="/work.html" title="Work Gallery">Work</a></li>
+          <li><a href="/contact.html" title="Contact Miyu">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <div class="content-container container">
       <div class="row">
         <div class="col-lg-6">
@@ -38,7 +57,7 @@
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <a href="#" class="btn btn-branding">See my projects</a>
+            <a href="/work.html" class="btn btn-branding">See my projects</a>
           </div>
         </div>
         <div class="col-lg-6">
